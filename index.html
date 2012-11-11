@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>gesturecontrols</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        
+
+        <style>
+            body {
+                -webkit-user-select: none;
+                background-color: #777;
+                background-image: url(data:image/png;base64,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);
+            }
+
+            #cursor {
+                width : 50px;
+                height : 50px;
+                background-color : #3F7CC1;
+                position : absolute;
+                -webkit-border-radius : 50px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            #image {
+                position : absolute;
+            }
+        </style>
+
+        <script src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+        <script src='/socket.io/socket.io.js'></script>
+
+        <script> 
+            var isMobile = {
+                Android: function() {
+                    return navigator.userAgent.match(/Android/i);
+                },
+                BlackBerry: function() {
+                    return navigator.userAgent.match(/BlackBerry/i);
+                },
+                iOS: function() {
+                    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                },
+                Opera: function() {
+                    return navigator.userAgent.match(/Opera Mini/i);
+                },
+                Windows: function() {
+                    return navigator.userAgent.match(/IEMobile/i);
+                },
+                any: function() {
+                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                }
+            };
+        </script>
+
+        <script>
+            var socket = io.connect('/');
+
+            $(function(){
+                var touching = true;
+
+                var selector = '#image'; /*************** SELECTOR: "#image" or "#cursor" ***************/
+
+                if (isMobile.any()) {
+                    function onTouchStart() {touching = true;}
+                    function onTouchEnd() {touching = false;}
+                    
+                    window.addEventListener('touchstart', onTouchStart, false);
+                    window.addEventListener('touchend', onTouchEnd, false);
+                } else {
+                    //if desktop, then create specified UI elements, either image or cursor
+                    if (selector == "#image") {
+                        var image = document.createElement('img');
+                        image.src = "/logo.png";
+                        image.id = "image";
+                        document.body.insertBefore(image);
+                    } else {
+                        //create necessary elements
+                        var cursor = document.createElement('div');
+                        cursor.id = "cursor";
+                        document.body.insertBefore(cursor);
+                    }
+                }
+
+                var x_offset = (document.width/2) - 90;
+                var y_offset = (document.height/2) - 24;
+                var x_sensitivity = 100;
+                var y_sensitivity = 20;
+
+                socket.on('update_orientationEvent', function(angle){
+                    //since alpha/yaw is not absolute - use compass to get absolute
+                    var new_x;
+                    if (angle.alpha > 180) {
+                      new_x = ((360 - angle.alpha) / 360) * 100;
+                    } else {
+                      new_x = (angle.alpha / 360 * -1) * 100;
+                    }
+                    $(selector).css('left', new_x * x_sensitivity + x_offset);
+
+                    $(selector).css('top', (angle.beta * y_sensitivity * -1) + y_offset);
+                    $(selector).css('-webkit-transform', 'rotateZ(' + angle.gamma + 'deg)');
+                });
+
+                var original_angle, steadying = 0, ready = 5;
+
+                function deviceOrientationHandler(orientation){
+                    if (steadying<ready) {steadying++;original_angle=orientation;return;}
+
+                    var roundTo = 100;
+                    var orientationEvent = {
+                        "alpha": Math.round(orientation.alpha*roundTo)/roundTo, //yaw - not absolute
+                        "beta": Math.round((orientation.beta-original_angle.beta)*roundTo)/roundTo,   //pitch - absolute
+                        "gamma": Math.round((orientation.gamma-original_angle.gamma)*roundTo)/roundTo, //roll - absolute
+                        "webkitCompassAccuracy": Math.round(orientation.webkitCompassAccuracy*roundTo)/roundTo, 
+                        "webkitCompassHeading": Math.round(orientation.webkitCompassHeading*roundTo)/roundTo,
+                    } 
+
+                    if (touching) {  
+                        socket.emit('orientationEvent', orientationEvent)
+                    }
+                };
+
+                if (window.DeviceOrientationEvent) {
+                    // Listen for the deviceorientation event and handle DeviceOrientationEvent object
+                    window.addEventListener('deviceorientation', deviceOrientationHandler, false);
+                } else if (window.OrientationEvent) {
+                    // Listen for the MozOrientation event and handle OrientationData object
+                    window.addEventListener('MozOrientation', deviceOrientationHandler, false);
+                }
+                
+            });
+        </script>
+
+    </head>
+    <body></body>
+</html>
