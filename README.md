@@ -4,7 +4,7 @@ This is a demo of the deviceorientation event API as defined by [W3C](http://dev
 ## What does the demo do?
 The demo uses the deviceorientation event API to collect orientation data on the iPhone. The data is sent to a mirror-server using websockets. The data is then used to move an <code>#image</code> or a <code>#cursor</code> in the browser (you will need to manually edit the code to switch between and image or a cursor). The image used is [melbjs](http://melbjs.com/)'s logo.
 
-+ The demo is built to run with Chrome on a Macbook and an iPhone 4. I haven't extensively tested it on other browsers or devices, but it should still work… let me know how you go [@hadi_michael](http://www.twitter.com/hadi_michael).
++ The demo is built to run with Chrome on Mac OSX Mountain Lion and an iPhone 4. I haven't extensively tested it on other browsers or devices, but it should still work… let me know how you go [@hadi_michael](http://www.twitter.com/hadi_michael).
 + Both devices need to share the same wireless network.
 + Port :3000 should not be blocked by your router or firewall - if it is, modify server.js to listen on a different (available) port.
 
@@ -23,7 +23,7 @@ You will need [node.js](http://www.nodejs.org), [express](http://expressjs.com/)
 ## Running the demo
 1. In terminal, start the server: <code>$ node /path/to/server.js</code>
 2. In Chrome, navigate to: <code>http://localhost:3000</code> - if you have replaced the port number in server.js, then replace it here as well.
-3. Connect to the server in Safari on your iPhone by navigating to <code>my.macs.ip.address:3000</code>. If you're on a small local home network, it is likely than your IP will be something like <code>192.168.0.1</code>. If you don't know it, use <code>$ ifconfig</code> to get it.
+3. Connect to the server in Safari on your iPhone by navigating to <code>my.macs.ip.address:3000</code>. If you're on a small local home network, it is likely that your IP address will be something like <code>192.168.0.1</code>. If you don't know it, use <code>$ ifconfig</code> to get it.
 
 # LICENSE (MIT)
 Copyright (C) 2012 Hadi Michael
