@@ -2,7 +2,7 @@
 This is a demo of the deviceorientation event API as defined by [W3C](http://dev.w3.org/geo/api/spec-source-orientation.html#deviceorientation).
 
 ## What does the demo do?
-The demo uses the deviceorientation event API to collect orientation data on the iPhone. The data is sent to a mirror-server using websockets. The data is then used to move an <code>#image</code> or a <code>#cursor</code> in the browser (you will need to manually edit the code to switch between and image or a cursor). The image used is [melbjs](http://melbjs.com/)'s logo.
+The demo uses the deviceorientation event API to collect orientation data on the iPhone. The data is sent to a mirror-server using websockets. The data is then used to move an <code>#image</code> or a <code>#cursor</code> in the browser (you will need to manually edit the code to switch between an image or a cursor). The image used is [melbjs](http://melbjs.com/)'s logo.
 
 + The demo is built to run with Chrome on Mac OSX Mountain Lion and an iPhone 4. I haven't extensively tested it on other browsers or devices, but it should still work… let me know how you go [@hadi_michael](http://www.twitter.com/hadi_michael).
 + Both devices need to share the same wireless network.
